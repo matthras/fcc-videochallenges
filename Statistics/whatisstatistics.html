@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>FreeCodeCamp Video Challenge - What Is Statistics?</title>
+
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../css/print/pdf.css' : '../css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!-- MathJax -->
+		<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="darkgreen" style="color:white; text-align:center;">
+					<img src="fcclogo.png" style="border: 0px; box-shadow:0 0 0;"><br />
+					<span style="font-family:monospace; color: white; font-size:100px;">What Is Statistics?</span>
+				</section>
+
+				<section>
+					<h3>2016 New Coder Survey</h3>
+					<ul>
+						<li class='fragment'>Developed by Quincy Larson (<a href='https://freecodecamp.com'>FreeCodeCamp</a>) and Saron Yitbarek (<a href='http://www.codenewbie.org/'>Code Newbie</a>)
+						<li class='fragment'>More than 15,000 respondants</li>
+						<li class='fragment'><a href='https://medium.freecodecamp.com/we-asked-15-000-people-who-they-are-and-how-theyre-learning-to-code-4104e29b2781#.bqzud6i8t'>Initial Findings</a>
+							<ul>
+								<li class='fragment'>Proportion of Women: 21%</li>
+								<li class='fragment'>Median Age: 27</li>
+								<li class='fragment'>Percentage of those who listen to coding-related podcasts: 26%</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<p class='fragment'>You can find the data here: https://github.com/FreeCodeCamp/2016-new-coder-survey
+					<br />Warning: Be careful when opening the CSV in Excel, as it may crash your computer!</p>
+				</section>
+
+				<section>
+					<h3>What do statisticians with this data?</h3>
+					<ul>
+						<li class='fragment'>Clean</li>
+						<li class='fragment'>Analyse</li>
+						<li class='fragment'>Present</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>What questions can we answer?</h3>
+					<ul>
+						<li class='fragment'>What is the average age of all new coders?</li>
+						<ii class='fragment'>How are these coders distributed all over the world?</li>
+					</ul><br />
+
+					<p class='fragment'>Got more? Ask away: <!-- Insert Link to repo/issues here --></p>
+				</section>
+
+				<section>
+					<h3>So why do we study statistics?</h3>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="../lib/js/head.min.js"></script>
+		<script src="../js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../plugin/markdown/marked.js' },
+					{ src: '../plugin/markdown/markdown.js' },
+					{ src: '../plugin/notes/notes.js', async: true },
+					{ src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
