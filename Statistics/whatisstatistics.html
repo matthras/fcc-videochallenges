@@ -30,6 +30,10 @@
 					<img src="fcclogo.png" style="border: 0px; box-shadow:0 0 0;"><br />
 					<span style="font-family:monospace; color: white; font-size:100px;">What Is Statistics?</span>
 				</section>
+				
+				<section>
+					<p>Statistics is the study of data including how it is collected, organised, transformed, analysed and presented.</p>
+				</section>
 
 				<section>
 					<h3>2016 New Coder Survey</h3>
@@ -46,9 +50,12 @@
 					</ul>
 				</section>
 
-				<section> <!-- Add background of scrolling through data -->
-					<p class='fragment'>You can find the data here: https://github.com/FreeCodeCamp/2016-new-coder-survey
-					<br />Warning: Be careful when opening the CSV in Excel, as it may crash your computer!</p>
+				<section data-background='white' data-background-video='data-background-compressed.mp4'>
+				</section>
+
+				<section>
+					<p>You can find the data here: https://github.com/FreeCodeCamp/2016-new-coder-survey</p>
+					<p>(You can open CSV files in Microsoft Excel)</p>
 				</section>
 
 				<section>
@@ -64,14 +71,12 @@
 					<h3>What questions can we answer with this data?</h3>
 					<ul>
 						<li class='fragment'>What is the average age of all new coders?</li>
-						<ii class='fragment'>How are these coders distributed all over the world?</li>
+						<li class='fragment'>What is the age/gender breakdown per country?</li>
+						<li class='fragment'>Controlling for months spent learning to code, how is listening to podcasts correlated with getting a job?</li>
+						<li class='fragment'>What are some interesting observations about parents learning to code (especially single parents/primary caregivers)?</li>
 					</ul><br />
 
-					<p class='fragment'>Got more? Ask away: <!-- Insert Link to repo/issues here --></p>
-				</section>
-
-				<section>
-					<h3>Where is statistics used?</h3>
+					<p class='fragment'>https://github.com/FreeCodeCamp/2016-new-coder-survey/issues</p>
 				</section>
 
 				<section>
@@ -89,6 +94,7 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+				transition: 'fade',
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
