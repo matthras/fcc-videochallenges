@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>FreeCodeCamp Video Challenge - What is a mean?</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!-- MathJax -->
+		<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="darkgreen" style="color:white; text-align:center; left: 17%">
+					<img src="fcclogo.png" style="border: 0px; box-shadow:0 0 0;"><br />
+					<span style="font-family:monospace; color: white; font-size:100px;">What is a mean?</span>
+				</section>
+
+
+				<section>
+					<h3>Mean</h3>
+					<ul>
+						<li>Colloquially known as the 'average'</li>
+						<li>A measure of central tendenacy</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Calculating the Mean</h3>
+					<p>Sum all numbers, then divide the total by the number of numbers</p>
+					<p>e.g. What is the mean of 1, 4, 9, and 16? <br />
+						Calculation: \( \frac{1+4+9+16}{4} = \frac{30}{4} = 7.5 \)
+					</p>
+				</section>
+
+				<section>
+					<h3>How would you write a function in Javascript to calculate the mean of a given array?</h3>
+
+				</section>
+
+				<section>
+					<h3>Thanks for watching!</h3>
+					<p>The slides used for this video can be found at: <br /> [LINK] </p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				transition: 'fade',
+
+				math: {
+					mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/math/math.js', async:true}
+				]
+			});
+		</script>
+	</body>
+</html>
