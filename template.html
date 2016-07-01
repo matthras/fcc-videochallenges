@@ -26,9 +26,17 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background="darkgreen" style="color:white;"><img src="fcclogo.png" style="border: 0px; box-shadow:0 0 0;">
-				<br /><span style="font-family:monospace; color: white; font-size:100px;">Video Challenge Title</span></section>
-				<section>Slide 2</section>
+				<section data-background="darkgreen" style="color:white; text-align:center; left: 17%">
+					<img src="fcclogo.png" style="border: 0px; box-shadow:0 0 0;"><br />
+					<span style="font-family:monospace; color: white; font-size:100px;">[TITLE]</span>
+				</section>
+
+
+				<section>
+					<h3>Thanks for watching!</h3>
+					<p>The slides used for this video can be found at: <br /> [LINK] </p>
+				</section>
+
 			</div>
 		</div>
 
@@ -39,13 +47,20 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+				transition: 'fade',
+
+				math: {
+					mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/math/math.js', async:true}
 				]
 			});
 		</script>
