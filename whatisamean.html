@@ -20,6 +20,47 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<style>
+			div.tooltip {
+					position: absolute;
+					text-align: center;
+					width: 40px;
+					height: 14px;
+					padding: 2px;
+					font: 12px sans-serif;
+					color: white;
+					background: black;
+					border: 0px;
+					border-radius: 8px;
+					pointer-events: none;
+			}
+
+			.axis text {
+			  font: 10px sans-serif;
+			}
+
+			.axis path,
+			.axis line {
+			  stroke: #000;
+			  shape-rendering: crispEdges;
+			}
+
+			.bar {
+			  fill: steelblue;
+			  fill-opacity: .9;
+			}
+
+			.bar:hover {
+			  fill: lightblue;
+			}
+
+			label {
+			  position: absolute;
+			  top: 10px;
+			  right: 10px;
+			}
+			</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -48,16 +89,16 @@
 
 				<section>
 					Age of Respondents in the 2016 New Coders Survey
-					<div id='agegraph'></div>
-					Average Age = ?
+					<div id='barchart'></div>
+					Average Age = 29.1754
 				</section>
 
 				<section> <!-- How would you write a function in Javascript to calculate the mean of a function? -->
-					<h3>A small task</h3>
+					<h3>A small exercise</h3>
 					<p>Write a function in Javascript that calculates the mean of an array of numbers.</p>
-					<p>Using lodash.js:
-					<pre><code class="hljs" data-trim contenteditable> <!-- Add line for showing how to insert lodash.js + link to lodash -->
-console.log(_.mean([1,4,9,16])) \\ 7.5
+					<p class='fragment'>The easy way using <a href='https://lodash.com/'>lodash.js</a>:
+					<pre><code class="hljs" data-trim contenteditable>
+_.mean([1,4,9,16]))
 					</code></pre></p>
 				</section>
 
@@ -93,5 +134,6 @@ console.log(_.mean([1,4,9,16])) \\ 7.5
 				]
 			});
 		</script>
+		<script src='whatisamean.js'></script>
 	</body>
 </html>
